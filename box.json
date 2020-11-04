@@ -1,58 +1,54 @@
 {
-    "author":"",
-    "bugs":"",
-    "changelog":"",
-    "contributors":[],
-    "dependencies":{},
-    "description":"",
-    "devDependencies":{},
-    "documentation":"",
-    "homepage":"",
-    "ignore":[
-        "**/.*",
-        "/test/",
-        "/tests/"
+  "author": "Matthew Clemente <mjclemente@gmail.com>",
+  "location": "mjclemente/jotformcfc#v0.1.0",
+  "version": "0.1.0",
+  "bugs": "https://github.com/mjclemente/jotformcfc/issues",
+  "changelog": "",
+  "contributors": [],
+  "dependencies": {},
+  "description": "A CFML wrapper for the JotForm API.",
+  "devDependencies": {},
+  "documentation": "https://github.com/mjclemente/jotformcfc/blob/main/README.md",
+  "homepage": "https://github.com/mjclemente/jotformcfc",
+  "ignore": ["**/.*", "/test/", "/tests/"],
+  "installPaths": {},
+  "instructions": "",
+  "keywords": ["jotform", "api", "forms"],
+  "license": [
+    {
+      "type": "MIT",
+      "URL": "https://github.com/mjclemente/jotformcfc/blob/main/LICENSE"
+    }
+  ],
+  "name": "jotformcfc",
+  "private": false,
+  "projectURL": "https://github.com/mjclemente/jotformcfc",
+  "repository": {
+    "type": "git",
+    "URL": "https://github.com/mjclemente/jotformcfc"
+  },
+  "scripts": {},
+  "shortDescription": "A CFML wrapper for the JotForm API.",
+  "slug": "jotformcfc",
+  "testbox": {
+    "bundles": "",
+    "directory": "tests.specs",
+    "excludes": "",
+    "labels": "",
+    "options": {},
+    "recurse": true,
+    "reporter": "",
+    "runner": [
+      {
+        "default": ""
+      }
     ],
-    "installPaths":{},
-    "instructions":"",
-    "keywords":[],
-    "license":[
-        {
-            "type":"",
-            "URL":""
-        }
-    ],
-    "location":"ForgeboxStorage",
-    "name":"jotformcfc",
-    "private":false,
-    "projectURL":"",
-    "repository":{
-        "type":"",
-        "URL":""
-    },
-    "scripts":{},
-    "shortDescription":"A CFML wrapper for the JotForm API. A CFML wrapper for the JotForm API. Build, manage, and report on your forms.",
-    "slug":"jotformcfc",
-    "testbox":{
-        "bundles":"",
-        "directory":"tests.specs",
-        "excludes":"",
-        "labels":"",
-        "options":{},
-        "recurse":true,
-        "reporter":"",
-        "runner":[
-            {
-                "default":""
-            }
-        ],
-        "testBundles":"",
-        "testSpecs":"",
-        "testSuites":"",
-        "verbose":true,
-        "watchDelay":500,
-        "watchPaths":"**.cfc"
-    },
-    "type":"modules",
-    "version":"0.0.0"
+    "testBundles": "",
+    "testSpecs": "",
+    "testSuites": "",
+    "verbose": true,
+    "watchDelay": 500,
+    "watchPaths": "**.cfc"
+  },
+  "type": "modules"
 }
