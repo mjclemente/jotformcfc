@@ -126,7 +126,8 @@ component displayname="jotformcfc"  {
             'responseTime' = getTickCount() - requestStart,
             'statusCode' = listFirst( apiResponse.statuscode, " " ),
             'statusText' = listRest( apiResponse.statuscode, " " ),
-            'headers' = apiResponse.responseheader
+            'headers' = apiResponse.responseheader,
+            'requestHeaders' = requestHeaders
         };
 
         var parsedFileContent = {};
