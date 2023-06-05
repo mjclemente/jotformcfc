@@ -11,7 +11,8 @@ component displayname="jotformcfc"  {
         string apiKey = '',
         string baseUrl = "https://api.jotform.com",
         boolean includeRaw = false,
-        numeric httpTimeout = 50
+        numeric httpTimeout = 50,
+        struct httpArgs = {}
     ) {
 
         structAppend( variables, arguments );
@@ -182,7 +183,13 @@ component displayname="jotformcfc"  {
             ? ( '?' & parseQueryParams( queryParams, false ) )
             : '' );
 
-        cfhttp( url = fullPath, method = httpMethod,  result = 'result', timeout = variables.httpTimeout ) {
+        cfhttp(
+          url                 = fullPath,
+          method              = httpMethod,
+          result              = 'result',
+          timeout             = variables.httpTimeout,
+          attributeCollection = variables.httpArgs
+        ) {
 
             if ( isJsonPayload( headers ) ) {
 
