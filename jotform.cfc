@@ -57,13 +57,17 @@ component displayname="jotformcfc"  {
       return apiCall( 'GET', '/user' );
     }
 
-    /**
-    * @docs https://api.jotform.com/docs/#user-forms
-    * @hint Get a list of forms for this account.
-    */
-    public struct function listUserForms() {
-      return apiCall( 'GET', '/user/forms' );
+  /**
+  * @docs https://api.jotform.com/docs/#user-forms
+  * @hint Get a list of forms for this account.
+  */
+  public struct function listUserForms( struct filter = {} ) {
+    var params = {};
+    if( !isEmpty(arguments.filter)){
+      params = {"filter" : serializeJSON(arguments.filter)};
     }
+    return apiCall( 'GET', '/user/forms', params );
+  }
 
     /**
     * @docs https://api.jotform.com/docs/#form-id
