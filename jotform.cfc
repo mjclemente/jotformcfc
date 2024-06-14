@@ -83,7 +83,7 @@ component displayname="jotformcfc"  {
 
     /**
     * @docs https://api.jotform.com/docs/#form-id-submissions
-    * @hint List of form reponses.
+    * @hint List of form responses.
     */
     public struct function getFormSubmissions( required string id ) {
       return apiCall( 'GET', '/form/#id#/submissions' );
