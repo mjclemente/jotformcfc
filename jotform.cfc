@@ -105,6 +105,33 @@ component displayname="jotformcfc"  {
       return apiCall( 'GET', '/form/#id#/reports' );
     }
 
+    /**
+    * @docs https://api.jotform.com/docs/#post-form-id-webhooks
+    * @hint Add a New Webhook to a Form
+    */
+    public struct function addFormWebhook( required string id, required string webhookURL ) {
+      var payload = {
+        "webhookURL": arguments.webhookURL
+      }
+      return apiCall( 'POST', '/form/#arguments.id#/webhooks', {}, payload );
+    }
+
+    /**
+    * @docs https://api.jotform.com/docs/#form-id-webhooks
+    * @hint List of Webhooks for a Form
+    */
+    public struct function listFormWebhooks( required string id ) {
+      return apiCall( 'GET', '/form/#arguments.id#/webhooks' );
+    }
+
+    /**
+    * @docs https://api.jotform.com/docs/#delete-form-id-webhooks
+    * @hint Delete a webhook of a specific form
+    */
+    public struct function deleteFormWebhook( required string id, required string webhookID ) {
+      return apiCall( 'DELETE', '/form/#arguments.id#/webhooks/#arguments.webhookID#' );
+    }
+
 
     // PRIVATE FUNCTIONS
     private struct function apiCall(
