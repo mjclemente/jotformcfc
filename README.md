@@ -34,32 +34,44 @@ If your account is in HIPAA Safe mode, use the baseUrl property to override the 
 
 ### Reference Manual
 
-#### `getForm( required string id )`
-
-Get basic information about a form. *[Endpoint docs](https://api.jotform.com/docs/#form-id)*
-
-#### `getFormQuestions( required string id )`
-
-Get a list of all questions on a form. *[Endpoint docs](https://api.jotform.com/docs/#form-id-questions)*
-
-#### `getFormReports( required string id )`
-
-Get all the reports of a specific form. *[Endpoint docs](https://api.jotform.com/docs/#form-id-reports)*
-
-#### `getFormSubmissions( required string id )`
-
-List of form reponses. *[Endpoint docs](https://api.jotform.com/docs/#form-id-submissions)*
-
-#### `getSubmission( required string id )`
-
-Similar to /form/{form-id}/submissions. But only get a single submission. *[Endpoint docs](https://api.jotform.com/docs/#submission-id)*
-
 #### `getUser()`
 
-Get user account details for this JotForm user. *[Endpoint docs](https://api.jotform.com/docs/#user)*
+Get user account details for this JotForm user. *[Further docs](https://api.jotform.com/docs/#user)*
 
 #### `listUserForms()`
 
-Get a list of forms for this account. *[Endpoint docs](https://api.jotform.com/docs/#user-forms)*
+Get a list of forms for this account. *[Further docs](https://api.jotform.com/docs/#user-forms)*
+
+#### `getForm( required string id )`
+
+Get basic information about a form. *[Further docs](https://api.jotform.com/docs/#form-id)*
+
+#### `getFormQuestions( required string id )`
+
+Get a list of all questions on a form. *[Further docs](https://api.jotform.com/docs/#form-id-questions)*
+
+#### `getFormSubmissions( required string id )`
+
+List of form responses. *[Further docs](https://api.jotform.com/docs/#form-id-submissions)*
+
+#### `getSubmission( required string id )`
+
+Similar to /form/{form-id}/submissions. But only get a single submission. *[Further docs](https://api.jotform.com/docs/#submission-id)*
+
+#### `getFormReports( required string id )`
+
+Get all the reports of a specific form. *[Further docs](https://api.jotform.com/docs/#form-id-reports)*
+
+#### `addFormWebhook( required string id, required string webhookURL )`
+
+Add a New Webhook to a Form. *[Further docs](https://api.jotform.com/docs/#post-form-id-webhooks)*
+
+#### `listFormWebhooks( required string id )`
+
+List of Webhooks for a Form. *[Further docs](https://api.jotform.com/docs/#form-id-webhooks)*
+
+#### `deleteFormWebhook( required string id, required string webhookID )`
+
+Delete a webhook of a specific form. *[Further docs](https://api.jotform.com/docs/#delete-form-id-webhooks)*
 
 ---
