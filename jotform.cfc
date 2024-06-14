@@ -192,7 +192,7 @@ component displayname="jotformcfc"  {
     private struct function getBaseHttpHeaders() {
         return {
             'Accept' : 'application/json',
-            'Content-Type' : 'application/json',
+            'Content-Type' : 'application/x-www-form-urlencoded',
             'APIKEY' : '#variables.apiKey#',
             'User-Agent' : 'jotformcfc/#variables._jotformcfc_version# (ColdFusion)'
         };
