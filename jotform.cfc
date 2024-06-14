@@ -5,7 +5,7 @@
 */
 component displayname="jotformcfc"  {
 
-    variables._jotformcfc_version = '0.2.2';
+    variables._jotformcfc_version = '0.2.3';
 
     public any function init(
         string apiKey = '',
